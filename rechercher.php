@@ -4,6 +4,8 @@ session_start();
 
 require './scripts/MesFonctions.php';
 require_once('./scripts/PF.php');
+
+$w = null;
  
 mysql_select_db($database_PF, $PF);
 $query_RechercherFamille = "SELECT distinct Famille FROM legumino ORDER BY Famille ASC";
