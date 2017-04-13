@@ -5,6 +5,20 @@ session_start();
 require './scripts/MesFonctions.php';
 require_once('./scripts/PF.php');
 
+// Initialisations anti-notices
+$Genre = null;
+$Espece = null;
+$Famille = null;
+$Rang = null;
+$LivreRouge = null;
+$Contributeur = null;
+$Commune = null;
+$NumTaxon = null;
+$jour = null;
+$date_saisie = null;
+$dep = null;
+$w = null;
+
 if ($Genre=="-- Indifférent --") {$Genre="%";} 
 if ($Espece=="-- Indifférent --") {$Espece="%";}
 if ($Genre=="") {$Genre="%";} 
